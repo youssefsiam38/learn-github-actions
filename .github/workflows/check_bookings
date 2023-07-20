@@ -1,0 +1,23 @@
+name: Check Almaza Cinema Bookings
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run_script:
+    name: Run My Python Script
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 'pypy3.9' 
+
+    - name: Run Python Script
+      run: python almaza_cinema.py
