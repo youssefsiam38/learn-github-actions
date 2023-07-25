@@ -26,5 +26,5 @@ def scrape_and_check(url):
         sys.exit(1)
 
 if __name__ == "__main__":
-    url = "https://egy.voxcinemas.com/showtimes?c=city-centre-almaza&m=oppenheimer&d=20230728"
+    url = "https://egy.voxcinemas.com/showtimes?c=city-centre-almaza&m=oppenheimer&d=20230804"
     scrape_and_check(url)
